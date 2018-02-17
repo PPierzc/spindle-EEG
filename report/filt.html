@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div class="row">
+    <div class="col-md-9">
+        <h1>Klasyfikator Wrzecion Snu</h1>
+        <h2>Metoda Filtrowania</h2>
+        <p>Paweł Pierzchlewicz</p>
+    </div>
+    <div class="col-md-3">
+        <a href="./index.html">Powrót do spisu treści</a>
+    </div>
+</div><br /><br />
+<div class="row item">
+    <div class="col-md-6"><img src="./images/signal.png" /></div>
+    <div class="col-md-6 description left-text">
+        <h3>Okienkowany Sygnał</h3>
+        <p class="italic">Przedstawienie sygnału okienkowanego prostokątnie na przedziale 0s - 20s.
+ Reprezentuje jedną składkę EEG.</p>
+    </div>
+</div>
+<div class="row item">
+    <div class="col-md-6 description right-text">
+        <h3>Przeflitrowany sygnał I</h3>
+        <p class="italic">Przedstawienie sygnału okienkowanego prostokątnie na przedziale 0s - 20s. Sygnał został przefiltrowany filtrem pasmowym z częstościami odcięcia 11 Hz i 16 Hz i następnie podniesiony do kwadratu</p>
+    </div>
+    <div class="col-md-6"><img src="./images/filt1.png" /></div>
+</div>
+<div class="row item">
+    <div class="col-md-6"><img src="./images/filt2.png" /></div>
+    <div class="col-md-6 description left-text">
+        <h3>Przeflitrowany sygnał II</h3>
+        <p class="italic">Przedstawienie sygnału okienkowanego prostokątnie na przedziale 0s - 20s. Sygnał został przefiltrowany filtrem dolnoprzepustowym z częstościami odcięcia 10 Hz, następnie wyciągnięto z niego pierwiastek</p>
+    </div>
+</div>
+<div class="row item">
+    <div class="col-md-6 description right-text">
+        <h3>Sygnał przemapowany 0/1</h3>
+        <p class="italic">Przedstawienie sygnału okienkowanego prostokątnie na przedziale 0s - 20s. Sygnał został przemapowany na wartości 0 i 1, gdzie 0 reprezentuje wartości mniejsze niż 5 mV, a 1 wartości większe niż 5 mV</p>
+    </div>
+    <div class="col-md-6"><img src="./images/filt3.png" /></div>
+</div><div class="row item">
+<div class="col-md-6">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-title">
+                Start
+            </div>
+            <div class="col-md-4 center table-title">
+                Koniec
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                9.33
+            </div>
+            <div class="col-md-4 center table-item">
+                9.89
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                102.42
+            </div>
+            <div class="col-md-4 center table-item">
+                102.93
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                118.48
+            </div>
+            <div class="col-md-4 center table-item">
+                119.16
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                130.55
+            </div>
+            <div class="col-md-4 center table-item">
+                131.17
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                221.81
+            </div>
+            <div class="col-md-4 center table-item">
+                222.31
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                234.4
+            </div>
+            <div class="col-md-4 center table-item">
+                234.89
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                306.88
+            </div>
+            <div class="col-md-4 center table-item">
+                307.74
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                330.93
+            </div>
+            <div class="col-md-4 center table-item">
+                331.62
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                352.73
+            </div>
+            <div class="col-md-4 center table-item">
+                353.56
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                356.12
+            </div>
+            <div class="col-md-4 center table-item">
+                356.73
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                358.58
+            </div>
+            <div class="col-md-4 center table-item">
+                359.37
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                368.67
+            </div>
+            <div class="col-md-4 center table-item">
+                369.2
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                382.27
+            </div>
+            <div class="col-md-4 center table-item">
+                383.15
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                390.09
+            </div>
+            <div class="col-md-4 center table-item">
+                390.59
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                395.38
+            </div>
+            <div class="col-md-4 center table-item">
+                395.92
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                425.3
+            </div>
+            <div class="col-md-4 center table-item">
+                425.93
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                457.8
+            </div>
+            <div class="col-md-4 center table-item">
+                458.32
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                489.91
+            </div>
+            <div class="col-md-4 center table-item">
+                490.46
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                503.64
+            </div>
+            <div class="col-md-4 center table-item">
+                504.17
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                508.25
+            </div>
+            <div class="col-md-4 center table-item">
+                508.74
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                541.89
+            </div>
+            <div class="col-md-4 center table-item">
+                542.42
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item">
+                552.18
+            </div>
+            <div class="col-md-4 center table-item">
+                552.73
+            </div>
+            <div class="col-md-2"></div>
+        </div><div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 center table-item-bottom">
+                584.65
+            </div>
+            <div class="col-md-4 center table-item-bottom">
+                585.5
+            </div>
+            <div class="col-md-2"></div>
+        </div></div><div class="col-md-6 description left-text">
+            <h3>Przedziały Wrzecion</h3>
+            <p class="italic">Przedziały czasowe [s], w których klasyfikator znalazł wrzeciona snu. Czyli odciniki w których wartość przefiltrowanego sygnału przekroczyła 5 mV na ponad 0.5s, w sumie znaleziono 23 wrzeciona snu tą metodą.</p>
+        </div></div><div class="footer"><a href="./mp.html">
+        <div class="btn right">
+            Next
+        </div>
+    </a></div>
+</body>
+</html>
